@@ -82,8 +82,9 @@ namespace DanfeSharp.Modelo
                 String result = "";
 
                 if (ModalidadesFrete.ContainsKey(ModalidadeFrete))
-                {
+                {                    
                     result = $"{ModalidadeFrete}-{ModalidadesFrete[ModalidadeFrete]}";
+                    if (ModalidadeFrete == 9) result = string.Empty;
                 }
                 else
                 {
