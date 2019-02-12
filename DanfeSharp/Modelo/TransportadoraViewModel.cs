@@ -85,6 +85,8 @@ namespace DanfeSharp.Modelo
                 {                    
                     result = $"{ModalidadeFrete}-{ModalidadesFrete[ModalidadeFrete]}";
                     if (ModalidadeFrete == 9) result = string.Empty;
+                    if (ModalidadeFrete == 0) result = "0 - CIF";
+                    if (ModalidadeFrete == 1) result = "1 - FOB";
                 }
                 else
                 {
